@@ -1,0 +1,10 @@
+.background {
+    background:linear-gradient(45deg, rgb(25,25,26) 0%, rgb(59,60,61) 100%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+html,body {
+    margin:0;
+    padding:0;
+}

@@ -1,0 +1,55 @@
+.name-box {
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 5em;
+    position: absolute;
+    top:0%;
+    height:45%;
+    margin: auto;
+    left: calc(50% - 4em);
+    
+}
+
+.col {
+    height: 100%;
+    display: inline-block;
+    width: 1em;
+    margin: 0;
+}
+
+.letter-start {
+    color: transparent;
+    display: block;
+}
+
+.letter-finish {
+    color: rgb(214, 214, 214);
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    animation-name: letter-fall;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes letter-fall {
+    0% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+
+@keyframes line-grow {
+    0% {
+
+    }
+    25% {
+
+    }
+    100%{
+
+    }
+}
