@@ -36,7 +36,7 @@ export default function Nav () {
                         <span className="material-symbols-outlined close">{content[3]}</span>
                     </div>
                     <div className="line-1 open">
-                        <a href={"https://github.com/TruxSux"}>{content[0]}</a>
+                        <a href={"https://github.com/Kaiolohia"}>{content[0]}</a>
                     </div>
                     <div className="line-2 open">
                         <a href={"https://www.linkedin.com/in/kai-dean-73846a217/"}>{content[1]}</a>
