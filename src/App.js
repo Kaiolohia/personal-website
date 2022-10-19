@@ -7,8 +7,21 @@ import Mainanimation from "./Mainanimation";
 function App() {
   return (
     <div className="background">
+      
       <Nav/>
       <Mainanimation/>
+      <div className="animation-box">
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+          <div className="item"></div>
+      </div>
     </div>
   );
 }

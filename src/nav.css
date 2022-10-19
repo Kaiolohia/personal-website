@@ -1,6 +1,6 @@
 .main {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top:0;
     right:0;
     background-color: rgb(77,79,82);
@@ -30,6 +30,7 @@
 
 .main.open {
     position: absolute;
+    z-index: 2;
     top:0;
     right:0;
     background-color: rgb(77,79,82);
