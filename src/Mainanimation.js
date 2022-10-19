@@ -3,6 +3,7 @@ import "./mainanimation.css"
 
 import Name from "./Name";
 import Subtext from "./Subtext";
+import Line from "./Line";
 
 export default function Mainanimation () {
     
@@ -10,6 +11,7 @@ export default function Mainanimation () {
         <div className="splash-box">
             <Name/>
             <Subtext/>
+            <Line/>
         </div>
     )
 }
