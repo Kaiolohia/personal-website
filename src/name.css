@@ -3,7 +3,7 @@
     font-size: 5em;
     position: absolute;
     top:0%;
-    height:45%;
+    height:49%;
     margin: auto;
     left: calc(50% - 4em);
     
@@ -35,21 +35,10 @@
 @keyframes letter-fall {
     0% {
         bottom: 100%;
+        color: transparent;
     }
     100% {
         bottom: 0;
-    }
-}
-
-
-@keyframes line-grow {
-    0% {
-
-    }
-    25% {
-
-    }
-    100%{
-
+        color: rgb(214, 214, 214);
     }
 }

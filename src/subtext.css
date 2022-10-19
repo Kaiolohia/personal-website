@@ -1,0 +1,44 @@
+.sub-text-box {
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 2em;
+    position: absolute;
+    top:51%;
+    height: 48%;
+    margin: auto;
+    left: calc(50% - 9em);
+    overflow: hidden;
+}
+
+.col-sb {
+    height: 100%;
+    display: inline-block;
+    width: 1em;
+    margin: 0;
+}
+
+.text-start {
+    color: transparent;
+    display: block;
+}
+
+.text-finish {
+    color: rgb(114,114,114);
+    position: absolute;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    top:0;
+    animation-name: letter-rise;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes letter-rise {
+    0% {
+        top: 100%;
+        color:transparent;
+    }
+    100% {
+        top: 0%;
+        color: rgb(114,114,114)
+    }
+}

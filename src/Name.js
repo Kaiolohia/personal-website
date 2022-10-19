@@ -2,15 +2,12 @@ import React from "react";
 import "./name.css"
 
 export default function Name () {
+                                                    //K A I _ D E A N
     const [delayList, setDelayList] = React.useState([0,0,0,0,0,0,0,0])
     React.useEffect(() => {
         let i = 0
         let tempList = [0,0,0,0,0,0,0,0]
         const increment = () => {
-            console.log("running")
-            console.log(i)
-            console.log(tempList)
-
             if (i > 7) {
                 clearInterval(delayInterval)
             } else {
@@ -41,7 +38,7 @@ export default function Name () {
             </div>
             <div className="col">
                 <p className={!delayList[3] ? "letter-start" : "letter-finish line"}>
-                    _
+                    
                 </p>
             </div>
             <div className="col">
