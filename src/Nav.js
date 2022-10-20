@@ -22,7 +22,7 @@ export default function Nav () {
         }
     }, [active])
     return (
-        <div className={!active ? "main" : "main open"} >
+        <div className={!active ? "main" : "main-open"} >
             {!active ?  (
                 <div className="trigger" onClick={triggerAnimation}>
                     <div className="line-1">
@@ -32,17 +32,17 @@ export default function Nav () {
                     <div className="line-3">
                     </div>
                 </div> ) : (<>
-                    <div className="trigger open" onClick={triggerAnimation}>
+                    <div className="trigger-open" onClick={triggerAnimation}>
                         <span className="material-symbols-outlined close">{content[3]}</span>
                     </div>
                     <div className="line-1 open">
-                        <a href={"https://github.com/Kaiolohia"} target="_blank">{content[0]}</a>
+                        <a href={"https://github.com/Kaiolohia"} target="_blank" rel="noreferrer">{content[0]}</a>
                     </div>
                     <div className="line-2 open">
-                        <a href={"https://www.linkedin.com/in/kai-dean-73846a217/"} target="_blank">{content[1]}</a>
+                        <a href={"https://www.linkedin.com/in/kai-dean-73846a217/"} target="_blank" rel="noreferrer">{content[1]}</a>
                     </div>
                     <div className="line-3 open">
-                        <a href={"https://docs.google.com/document/d/1nV9rhDmva1inTiLgyTucKDliTbD8MllHlasoNmvNpDk/edit?usp=sharing"} target="_blank">{content[2]}</a>
+                        <a href={"https://docs.google.com/document/d/1nV9rhDmva1inTiLgyTucKDliTbD8MllHlasoNmvNpDk/edit?usp=sharing"} target="_blank" rel="noreferrer">{content[2]}</a>
                     </div>
                     
                 </>)

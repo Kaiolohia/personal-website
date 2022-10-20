@@ -2,10 +2,26 @@ body {
     overflow: hidden;
 }
 .background {
-    background:linear-gradient(45deg, rgb(25,25,26) 0%, rgb(59,60,61) 100%);
+    background:linear-gradient(45deg, rgb(25,25,26) 0%, rgb(102, 102, 102) 50%, rgb(26, 26, 26) 100%);
+    background-size: 400% 400%;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    animation-name: shifting-gradient;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shifting-gradient {
+    0% {
+        background-position:0% 0%;
+    }
+    25% {
+        background-position:100% 0%;
+    }
+    50% { 
+        background-position:0% 100%;
+    }
 }
 html,body {
     margin:0;
@@ -24,9 +40,8 @@ html,body {
     background-color: rgb(41, 41, 41);
     position: absolute;
     content: "";
-    border-radius: 20%;
     animation-name: box-background;
-    animation-duration: 12s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     z-index: 0;
     bottom: 120%;
@@ -108,9 +123,14 @@ html,body {
         bottom: -20%;
         transform: rotate(0deg);
         box-shadow:  -12px -12px 12px 0 rgba(58, 58, 58, 0.3),12px 12px 12px 0 rgba(0,0,0,.2), inset  0px 0px 0px 0 rgba(58, 58, 58, 0.3), inset 0px 0px 0px 0 rgba(0,0,0,.2);
+        border-radius: 10%;
+    }
+    25% {
+        border-radius: 50%;
     }
     50% {
         box-shadow: 0px 0px 0px 0 rgba(58, 58, 58, 0.3), 0px 0px 0px 0 rgba(0,0,0,.2), inset  -12px -12px 12px 0 rgba(58, 58, 58, 0.3), inset 12px 12px 12px 0 rgba(0,0,0,.2);
+        border-radius: 10%;
     }
     100% {
         bottom:120%;

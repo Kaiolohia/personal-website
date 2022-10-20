@@ -7,15 +7,17 @@
     width: 5em;
     height: 5em;
     transition: background-color 0.25s, width 0.5s;
+    border-radius: 0% 0% 0% 20%;
     
 }
 
 .trigger {
     height: 100%;
-    width: 100%
+    width: 100%;
+    transition: background-color 0.5s;
 }
 
-.trigger.open {
+.trigger-open {
     position: absolute;
     display: block;
     height: 100%;
@@ -26,9 +28,14 @@
 
 .trigger:hover {
     background-color: rgb(62, 62, 63);
+    border-radius: 0% 0% 0% 20%;
 }
 
-.main.open {
+.trigger-open:hover {
+    background-color: rgb(62, 62, 63);
+}
+
+.main-open {
     position: absolute;
     z-index: 2;
     top:0;
