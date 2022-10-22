@@ -1,0 +1,7 @@
+.temp {
+    z-index: 1;
+    font-family: "Noto sans mono", monospace;
+    position: absolute;
+    left: 13%;
+    top: 30%;
+}
