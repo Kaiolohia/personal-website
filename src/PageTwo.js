@@ -3,9 +3,11 @@ import BackgroundAnimation from "./BackgroundAnimation";
 
 import "./pagetwo.css"
 
-export default function PageTwo ({inc, dec}) {
+export default function PageTwo ({inc, dec, animationDir}) {
+
     return (
         <div className="background">
+            <div className={animationDir}/>
             <BackgroundAnimation/>
             <h1 className="temp">
                 This page is a work in progess and a place holder for my projects page

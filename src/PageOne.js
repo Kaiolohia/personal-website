@@ -11,7 +11,7 @@ export default function PageOne ({inc,setAnimationDir}) {
     const triggerWaveUpAnimation = () => {
         setWtu(true)
         const delay = setTimeout(() => {
-          setAnimationDir("up")
+          setAnimationDir("dir-up-wipe")
           inc()
           setWtu(false)
         },2000)

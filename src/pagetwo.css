@@ -13,3 +13,24 @@
     left: 13%;
     top: 40%;
 }
+
+.dir-up-wipe {
+    z-index: 4;
+    background-color: #262626;
+    position: absolute;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    animation-name: dir-up-wipe;
+    animation-duration: 1s;
+}
+
+
+@keyframes dir-up-wipe {
+    0% {
+        top:0%
+    }
+    100% {
+        top: -100%
+    }
+}
