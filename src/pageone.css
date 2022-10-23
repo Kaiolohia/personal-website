@@ -1,0 +1,20 @@
+.dir-down-wipe {
+    z-index: 4;
+    background-color: #262626;
+    position: absolute;
+    bottom: -100%;
+    width: 100vw;
+    height: 100vh;
+    animation-name: dir-down-wipe;
+    animation-duration: 0.25s;
+}
+
+
+@keyframes dir-down-wipe {
+    0% {
+        bottom:0%;
+    }
+    100% {
+        bottom: -100%;
+    }
+}

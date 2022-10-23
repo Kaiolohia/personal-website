@@ -5,7 +5,9 @@ import NextPage from "./NextPage";
 import BackgroundAnimation from "./BackgroundAnimation";
 import WaveTransitionUp from "./WaveTransitionUp";
 
-export default function PageOne ({inc,setAnimationDir}) {
+import "./pageone.css"
+
+export default function PageOne ({inc,animationDir, setAnimationDir}) {
     const [wtu, setWtu] = React.useState(false)
 
     const triggerWaveUpAnimation = () => {
@@ -20,6 +22,7 @@ export default function PageOne ({inc,setAnimationDir}) {
 
     return (
         <div className="background">
+          <div className={animationDir}/>
           <Nav/>
           <Mainanimation/>
           <NextPage twu={triggerWaveUpAnimation}/>

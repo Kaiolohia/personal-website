@@ -1,12 +1,14 @@
-.wtu-container {
+.wtd-container {
+    z-index: 2;
     position: absolute;
     height: 100vh;
     width: 100vw;
     left: 0;
     top:0;
+    rotate: 180deg;
 }
 
-.wtu-wave-1 {
+.wtd-wave-1 {
     z-index: 2;
     position: absolute;
     top: -55%;
@@ -15,17 +17,17 @@
     
 }
 
-.wtu-wave-1-bg {
+.wtd-wave-1-bg {
     z-index: 2;
     position: absolute;
     width: 100%;
     height: 200%;
-    top: 0%;
+    top: 50%;
     background-color: #e7008a;
     animation: wave-1-up 1s ease-in-out;
 }
 
-.wtu-wave-2 {
+.wtd-wave-2 {
     z-index: 3;
     position: absolute;
     top: -55%;
@@ -33,7 +35,7 @@
     width: 100%;
 }
 
-.wtu-wave-2-bg {
+.wtd-wave-2-bg {
     z-index: 2;
     position: absolute;
     width: 100%;
@@ -43,7 +45,7 @@
     animation: wave-2-up 1s ease-in-out;
 }
 
-.wtu-wave-3 {
+.wtd-wave-3 {
     z-index: 4;
     position: absolute;
     top: -55%;
@@ -51,7 +53,7 @@
     width: 100%;
 }
 
-.wtu-wave-3-bg {
+.wtd-wave-3-bg {
     z-index: 2;
     position: absolute;
     width: 100%;
@@ -61,41 +63,41 @@
     animation: wave-3-up 1s ease-in-out;
 }
 
-@keyframes wave-1-up {
+@keyframes wave-1-down {
     0% {
-        top: 150%;
+        top: -100%;
     }
     30%{
-        top: -100%;
+        top: 150%;
     }
     100% {
-        top: -100%;
+        top: 150%;
     }
 }
 
-@keyframes wave-2-up {
+@keyframes wave-2-down {
     0% {
-        top: 150%;
+        top: -100%;
     }
     20%{
-        top: 150%;
+        top: -100%;
     }
     60% {
-        top: -100;
+        top: 150%;
     }
     100% {
-        top: -100%;
+        top: 150%;
     }
 }
 
-@keyframes wave-3-up {
+@keyframes wave-3-down {
     0% {
-        top:150%;
+        top:-100%;
     }
     50% {
-        top: 150%;
+        top: -100%;
     }
     100% {
-        top: -100%;
+        top: 150%;
     }
 }
