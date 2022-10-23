@@ -14,7 +14,7 @@ export default function PageOne ({inc,setAnimationDir}) {
           setAnimationDir("dir-up-wipe")
           inc()
           setWtu(false)
-        },2000)
+        },1000)
         return () => clearTimeout(delay)
     }
 

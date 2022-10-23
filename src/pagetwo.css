@@ -22,7 +22,7 @@
     width: 100vw;
     height: 100vh;
     animation-name: dir-up-wipe;
-    animation-duration: 1s;
+    animation-duration: 0.25s;
 }
 
 
