@@ -1,17 +1,22 @@
-.temp {
-    z-index: 1;
-    font-family: "Noto sans mono", monospace;
-    position: absolute;
-    left: 13%;
-    top: 30%;
+.content-1 {
+    height: 50%;
+    width: 50%;
+}
+.content-2 {
+    height: 50%;
+    width: 50%;
+}
+.content-3 {
+    left: 50%;
+    height:100%;
+    width: 50%;
 }
 
-.temp-2 {
-    z-index: 1;
-    font-family: "Noto sans mono", monospace;
+.container {
     position: absolute;
-    left: 13%;
-    top: 40%;
+    width: 100%;
+    height: 80%;
+    top: 20%;
 }
 
 .dir-up-wipe {

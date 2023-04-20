@@ -23,12 +23,17 @@ export default function PageTwo ({inc, dec, animationDir, setAnimationDir}) {
             <BackgroundAnimation/>
             <PrevPage twd={triggerWavDownAnimation}/>
             {wtd && <WaveTransitionDown />}
-            <h1 className="temp">
-                This page is a work in progess and a place holder for my projects page
-            </h1>
-            <h2 className="temp-2">
-                Stand by for future updates found on my <a href="https://www.github.com/Kaiolohia/personal-website">github</a>
-            </h2>
+            <div className="container">
+                <div className="content-1">
+                    Encryption
+                  </div>
+                <div className="content-2">
+                    Turtle
+                </div>
+                <div className="content-3">
+                    KVSafe
+                </div>
+            </div>
         </div>
     )
 }
