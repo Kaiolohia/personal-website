@@ -3,6 +3,9 @@ import BackgroundAnimation from "./BackgroundAnimation";
 import PrevPage from "./PrevPage";
 import WaveTransitionDown from "./WaveTransitionDown";
 import "./pagetwo.css"
+import { ReactComponent as Lock } from "./lock-solid.svg";
+import { ReactComponent as Wifi } from "./wifi-solid.svg";
+import { ReactComponent as Key } from "./key-solid.svg";
 
 export default function PageTwo ({inc, dec, animationDir, setAnimationDir}) {
     const [wtd, setWtd] = React.useState(false)
@@ -25,13 +28,19 @@ export default function PageTwo ({inc, dec, animationDir, setAnimationDir}) {
             {wtd && <WaveTransitionDown />}
             <div className="container">
                 <div className="content-1">
-                    Encryption
-                  </div>
+                    <div className="box-1">
+                        <h1 className="title">ENCRYPTION <Lock className="lock"/></h1>
+                    </div>
+                </div>
                 <div className="content-2">
-                    Turtle
+                    <div className="box-2">
+                        <h1 className="title">TURTLE <Wifi className="wifi"/></h1>
+                    </div>
                 </div>
                 <div className="content-3">
-                    KVSafe
+                    <div className="box-3">
+                        <h1 className="title">KVSAFE <Key className="key"/></h1>
+                    </div>
                 </div>
             </div>
         </div>
