@@ -31,6 +31,7 @@
     left: 0;
     animation-name: line-left;
     animation-duration: 2s;
+    
 }
 
 .line-right-active {
@@ -41,6 +42,37 @@
     right: 0;
     animation-name: line-right;
     animation-duration: 2s;
+}
+
+.line-left-color {
+    background-color: transparent;
+    height: 100%;
+    width: 10%;
+    left: 0;
+}
+
+.line-left-color-active {
+    position: absolute;
+    background-color: transparent;
+    height: 20%;
+    width: 50%;
+    right: 50%;
+    animation-name: line-left-color;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.line-right-color-active {
+    position: absolute;
+    background-color: transparent;
+    height: 20%;
+    width: 50%;
+    left: 50%;
+    animation-name: line-right-color;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes line-left {
@@ -57,6 +89,7 @@
         background-color: rgb(214, 214, 214);
         width: 50%;
     }
+    
 }
 
 @keyframes line-right {
@@ -72,5 +105,67 @@
     100% {
         background-color: rgb(214, 214, 214);
         width: 50%;
+    }
+}
+
+@keyframes line-left-color {
+    0% {
+        background-color: #e7008a;
+        width: 0%;
+    }
+
+    10% {
+        background-color: #e7008a;
+        width: 50%;
+    }
+
+    40%{
+        background-color: #e7008a;
+        width: 50%;
+        right: 50%;
+    }
+
+    49% {
+        background-color: #e7008a;        
+    }
+
+    50% {
+        width: 0%;
+        right: 100%;
+    }
+    100% {
+        width: 0%;
+        right: 100%;
+    }
+}
+
+@keyframes line-right-color {
+    0% {
+        background-color: #e7008a;
+        width: 0%;
+    }
+
+    10% {
+        background-color: #e7008a;
+        width: 50%;
+    }
+
+    40%{
+        background-color: #e7008a;
+        width: 50%;
+        left: 50%;
+    }
+
+    49% {
+        background-color: #e7008a;        
+    }
+
+    50% {
+        width: 0%;
+        left: 100%;
+    }
+    100% {
+        width: 0%;
+        left: 100%;
     }
 }

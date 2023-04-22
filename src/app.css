@@ -2,25 +2,27 @@ body {
     overflow: hidden;
 }
 .background {
-    background:linear-gradient(45deg, rgb(25,25,26) 0%, rgb(102, 102, 102) 50%, rgb(26, 26, 26) 100%);
+    background:linear-gradient(45deg, rgb(26,26,26) 0%, rgb(102, 102, 102) 50%, rgb(26, 26, 26) 100%);
     background-size: 400% 400%;
+    background-position: 100% 0%;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     animation-name: shifting-gradient;
     animation-duration: 30s;
     animation-iteration-count: infinite;
+    animation-delay: 0.5s;
 }
 
 @keyframes shifting-gradient {
     0% {
-        background-position:0% 0%;
-    }
-    25% {
         background-position:100% 0%;
     }
-    50% { 
+    25% {
         background-position:0% 100%;
+    }
+    50% { 
+        background-position:100% 0%;
     }
 }
 html,body {

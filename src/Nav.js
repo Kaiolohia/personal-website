@@ -14,7 +14,7 @@ export default function Nav () {
     React.useEffect(() => {
         if (active) {
             const delay = setTimeout(() => {
-                setContent(["GITHUB", "LINKEDIN", "RESUME", "close"])
+                setContent(["GITHUB", "LINKEDIN", "RÉSUMÉ", "close"])
             }, 2000)
             return () => clearTimeout(delay)
         } else {
